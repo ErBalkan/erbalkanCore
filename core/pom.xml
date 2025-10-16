@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.erbalkan</groupId>
+    <artifactId>core</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>core</name>
+    <description>My core project</description>
+    <url>https://github.com/ErBalkan/erbalkanCore</url>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>ErBalkan</id>
+            <name>Erhan</name>
+            <email>errbalkan@gmail.com</email>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Erhan Packages</name>
+            <url>https://github.com/ErBalkan/erbalkanCore</url>
+        </repository>
+    </distributionManagement>
+    <dependencies>
+        <!-- JPA API -->
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.2.0</version>
+        </dependency>
+
+        <!-- Lombok (Opsiyonel, kod sadeleştirme için) -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.40</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+</project>
